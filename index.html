@@ -98,10 +98,17 @@
             transition: background 0.3s;
         }
 
-        .dropdown div:hover,
         .dropdown div.selected {
-            background: #e5e5ea;
-        }
+		    background: #e5e5ea;
+		}
+		
+		.dropdown.mouse-hover div.selected {
+		    background: white;
+		}
+		
+		.dropdown.mouse-hover div:hover {
+		    background: #e5e5ea;
+		}
 
         .popup {
             position: fixed;
