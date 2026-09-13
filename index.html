@@ -150,52 +150,88 @@
 
 		/* Mobile responsiveness */
 		@media (max-width: 600px) {
-		
-		    .header {
-		        font-size: 22px;
-		        padding: 15px;
-		        flex-direction: column;
-		    }
-		
-		    .header img {
-		        height: 70px;
-		        margin-right: 0;
-		        margin-bottom: 10px;
-		    }
-		
-		    .search-container {
-		        margin-top: 20px;
-		        padding: 0 15px;
-		        width: auto;
-		    }
-		
-		    input {
-		        width: 100%;
-		        box-sizing: border-box;
-		        font-size: 16px;
-		    }
-		
-		    .dropdown {
-		        width: calc(100% - 30px);
-		        max-width: 460px;
-		        box-sizing: border-box;
-		    }
-		
-		    .popup {
-		        width: calc(100% - 40px);
-		        max-width: 320px;
-		        box-sizing: border-box;
-		    }
-		
-		    button {
-		        font-size: 16px;
-		    }
-		
-		    footer {
-		        font-size: 0.8em;
-		        padding: 15px;
-		    }
-		}
+
+	    body {
+	        width: 100%;
+	        overflow-x: hidden;
+	    }
+	
+	    .header {
+	        display: flex;
+	        flex-direction: column;
+	        justify-content: center;
+	        align-items: center;
+	        font-size: 20px;
+	        line-height: 1.2;
+	        padding: 12px 10px;
+	        box-sizing: border-box;
+	        text-align: center;
+	    }
+	
+	    .header img {
+	        width: auto;
+	        height: 55px;
+	        max-width: 80%;
+	        margin-right: 0;
+	        margin-bottom: 8px;
+	    }
+	
+	    .search-container {
+	        width: 100%;
+	        margin-top: 15px;
+	        padding: 0 12px;
+	        box-sizing: border-box;
+	    }
+	
+	    input {
+	        width: 100%;
+	        box-sizing: border-box;
+	        padding: 10px;
+	        font-size: 16px;
+	    }
+	
+	    .dropdown {
+	        width: calc(100% - 24px);
+	        max-width: none;
+	        max-height: 250px;
+	        left: 50%;
+	        box-sizing: border-box;
+	        font-size: 15px;
+	    }
+	
+	    .dropdown div {
+	        padding: 10px;
+	    }
+	
+	    .popup {
+	        width: calc(100% - 32px);
+	        max-width: 320px;
+	        padding: 20px;
+	        box-sizing: border-box;
+	        font-size: 15px;
+	    }
+	
+	    .popup button {
+	        padding: 10px;
+	        font-size: 15px;
+	    }
+	
+	    .last-updated {
+	        font-size: 13px;
+	    }
+	
+	    footer {
+	        width: 100%;
+	        box-sizing: border-box;
+	        padding: 12px 10px;
+	        font-size: 11px;
+	        line-height: 1.4;
+	    }
+	
+	    footer p {
+	        margin: 0;
+	    }
+	}
 		
     </style>
 </head>
