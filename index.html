@@ -330,11 +330,23 @@
             });
         });
 
-        dropdown.addEventListener("click", function (e) {
-            if (e.target.tagName === "DIV") {
-                showPopup(e.target.textContent);
-            }
-        });
+        dropdown.addEventListener("mouseover", function (e) {
+		    if (e.target.tagName === "DIV") {
+		        const items = dropdown.children;
+		
+		        Array.from(items).forEach((item, index) => {
+		            item.classList.toggle("selected", item === e.target);
+		        });
+		
+		        selectedIndex = Array.from(items).indexOf(e.target);
+		    }
+		});
+		
+		dropdown.addEventListener("click", function (e) {
+		    if (e.target.tagName === "DIV") {
+		        showPopup(e.target.textContent);
+		    }
+		});
 
         function showPopup(medicineName) {
             if (!medicineName) return;
