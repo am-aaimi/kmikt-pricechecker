@@ -147,6 +147,56 @@
             font-style: italic;
             font-size: 14px;
         }
+
+		/* Mobile responsiveness */
+		@media (max-width: 600px) {
+		
+		    .header {
+		        font-size: 22px;
+		        padding: 15px;
+		        flex-direction: column;
+		    }
+		
+		    .header img {
+		        height: 70px;
+		        margin-right: 0;
+		        margin-bottom: 10px;
+		    }
+		
+		    .search-container {
+		        margin-top: 20px;
+		        padding: 0 15px;
+		        width: auto;
+		    }
+		
+		    input {
+		        width: 100%;
+		        box-sizing: border-box;
+		        font-size: 16px;
+		    }
+		
+		    .dropdown {
+		        width: calc(100% - 30px);
+		        max-width: 460px;
+		        box-sizing: border-box;
+		    }
+		
+		    .popup {
+		        width: calc(100% - 40px);
+		        max-width: 320px;
+		        box-sizing: border-box;
+		    }
+		
+		    button {
+		        font-size: 16px;
+		    }
+		
+		    footer {
+		        font-size: 0.8em;
+		        padding: 15px;
+		    }
+		}
+		
     </style>
 </head>
 
